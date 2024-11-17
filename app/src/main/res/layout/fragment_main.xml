@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainFragment">
 
-</FrameLayout>
+    <Button
+        android:id="@+id/cameraBTN"
+        style="@style/ButtonStyle"
+        android:layout_width="@dimen/minWidthET"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/defMargin"
+        android:text="@string/cameraBTN_text" />
+
+    <Button
+        android:id="@+id/contactsBTN"
+        style="@style/ButtonStyle"
+        android:layout_width="@dimen/minWidthET"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/defMargin"
+        android:text="@string/contactsBTN_text" />
+
+</LinearLayout>

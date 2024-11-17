@@ -26,9 +26,9 @@ open class BaseActivity : AppCompatActivity() {
         val isDarkMode = sharedPreferences.getBoolean("dark_mode", false)
 
         if (isDarkMode) {
-            setTheme(R.style.Theme_16_1_VideoView)
+            setTheme(R.style.Theme_16_2_Permissions)
         } else {
-            setTheme(R.style.Theme_16_1_VideoView)
+            setTheme(R.style.Theme_16_2_Permissions)
         }
     }
 

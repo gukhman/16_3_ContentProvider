@@ -3,5 +3,9 @@
     <string name="toolbarTitle">Предоставление разрешений</string>
     <string name="exit">Выход</string>
 
+    <string name="cameraBTN_text">Доступ к камере</string>
+    <string name="contactsBTN_text">Доступ к контактам</string>
+    <string name="contactName_text">Имя</string>
+    <string name="contactPhoneNumber_text">Телефон</string>
 
 </resources>
