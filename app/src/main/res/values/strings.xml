@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">16_2_Permissions</string>
+    <string name="toolbarTitle">Предоставление разрешений</string>
+    <string name="exit">Выход</string>
+
+
+</resources>
