@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.a16_2_Permissions"
+    namespace = "com.example.a16_3_ContentProvider"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.a16_2_Permissions"
+        applicationId = "com.example.a16_3_ContentProvider"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
@@ -49,4 +49,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation (libs.material)
 }

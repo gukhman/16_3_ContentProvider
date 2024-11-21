@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "16_2_Permissions"
+rootProject.name = "16_3_ContentProvider"
 include(":app")
  

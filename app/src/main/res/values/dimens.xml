@@ -9,6 +9,7 @@
     <dimen name="defPadding">8dp</dimen>
     <dimen name="bigPadding">32dp</dimen>
     <dimen name="smallTextSize">14sp</dimen>
-    <dimen name="imageHeight">150dp</dimen>
+    <dimen name="imageHeight">36dp</dimen>
     <dimen name="layout_margin">8dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
 </resources>

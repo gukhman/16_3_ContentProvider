@@ -1,4 +1,4 @@
-package com.example.a16_2_Permissions
+package com.example.a16_3_ContentProvider
 
 import android.os.Bundle
 import android.view.Menu
@@ -26,9 +26,9 @@ open class BaseActivity : AppCompatActivity() {
         val isDarkMode = sharedPreferences.getBoolean("dark_mode", false)
 
         if (isDarkMode) {
-            setTheme(R.style.Theme_16_2_Permissions)
+            setTheme(R.style.AppTheme)
         } else {
-            setTheme(R.style.Theme_16_2_Permissions)
+            setTheme(R.style.AppTheme)
         }
     }
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">16_2_Permissions</string>
+    <string name="app_name">16_3_ContentProvider</string>
     <string name="toolbarTitle">Предоставление разрешений</string>
     <string name="exit">Выход</string>
 
@@ -7,5 +7,9 @@
     <string name="contactsBTN_text">Доступ к контактам</string>
     <string name="contactName_text">Имя</string>
     <string name="contactPhoneNumber_text">Телефон</string>
+    <string name="sms_text">Введите сообщение</string>
+    <string name="sendSMS_BTNtext">Отправить</string>
+    <string name="callBTN_text">Вызов</string>
+    <string name="smsBTN_text">СМС</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.a16_2_Permissions
+package com.example.a16_3_ContentProvider
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.example.a16_2_Permissions
+package com.example.a16_3_ContentProvider
 
 import org.junit.Test
 

@@ -1,8 +1,9 @@
-package com.example.a16_2_Permissions
+package com.example.a16_3_ContentProvider
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import com.example.a16_2_Permissions.databinding.ActivityMainBinding
+import com.example.a16_3_ContentProvider.databinding.ActivityMainBinding
+
 
 class MainActivity : BaseActivity() {
 
@@ -17,7 +18,7 @@ class MainActivity : BaseActivity() {
 
         // Стартовый фрагмент
         if (savedInstanceState == null) {
-            replaceFragment(MainFragment())
+            replaceFragment(MainFragment(), false)
         }
     }
 
