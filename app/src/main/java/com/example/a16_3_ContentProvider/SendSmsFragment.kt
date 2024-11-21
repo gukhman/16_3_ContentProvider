@@ -53,7 +53,8 @@ class SendSmsFragment : Fragment() {
                                 sendSms(it.phoneNumber, message)
                                 parentFragmentManager.popBackStack()
                                 showSnackbar("Сообщение отправлено контакту ${it.name}")
-                            }
+                            } else
+                                showSnackbar("Пустое сообщение")
                         }
                     }
                 }

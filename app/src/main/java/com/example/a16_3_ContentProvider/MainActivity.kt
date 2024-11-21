@@ -14,9 +14,10 @@ class MainActivity : BaseActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupWindowInsets(R.id.main)
+
         setupToolbar(R.id.toolbar, false)
 
-        // Стартовый фрагмент
+        // Стартовый фрагмент, его не добавляем в backstack
         if (savedInstanceState == null) {
             replaceFragment(MainFragment(), false)
         }

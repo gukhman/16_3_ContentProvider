@@ -21,23 +21,12 @@ open class BaseActivity : AppCompatActivity() {
         enableEdgeToEdge()
     }
 
-    private fun enableDarkMode() {
-        val sharedPreferences = getSharedPreferences("app_preferences", MODE_PRIVATE)
-        val isDarkMode = sharedPreferences.getBoolean("dark_mode", false)
-
-        if (isDarkMode) {
-            setTheme(R.style.AppTheme)
-        } else {
-            setTheme(R.style.AppTheme)
-        }
-    }
-
     fun setupToolbar(toolbarId: Int, needBackArrow: Boolean) {
         toolbar = findViewById(toolbarId)
         setSupportActionBar(toolbar)
         supportActionBar?.setDisplayShowTitleEnabled(false)
 
-        backButton = toolbar.findViewById(R.id.back_button)
+        backButton = toolbar.findViewById(R.id.back_button) ?: return
 
         if (needBackArrow) {
             backButton.visibility = View.VISIBLE
@@ -71,6 +60,31 @@ open class BaseActivity : AppCompatActivity() {
 
             R.id.action_exit -> {
                 finishAffinity()  // Закрыть все активности
+                true
+            }
+
+            R.id.action_search -> {
+                val searchView = item.actionView as androidx.appcompat.widget.SearchView
+                searchView.setOnQueryTextListener(object :
+                    androidx.appcompat.widget.SearchView.OnQueryTextListener {
+                    override fun onQueryTextSubmit(query: String?): Boolean {
+                        val fragment =
+                            supportFragmentManager.findFragmentById(R.id.fragmentContainer)
+                        if (fragment is MainFragment) {
+                            fragment.filterContacts(query)
+                        }
+                        return true
+                    }
+
+                    override fun onQueryTextChange(newText: String?): Boolean {
+                        val fragment =
+                            supportFragmentManager.findFragmentById(R.id.fragmentContainer)
+                        if (fragment is MainFragment) {
+                            fragment.filterContacts(newText)
+                        }
+                        return true
+                    }
+                })
                 true
             }
 

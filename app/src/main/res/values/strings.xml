@@ -9,5 +9,14 @@
     <string name="sendSMS_BTNtext">Отправить</string>
     <string name="callBTN_text">Вызов</string>
     <string name="smsBTN_text">СМС</string>
+    <string name="nameET_hint">Введите имя</string>
+    <string name="phoneET_hint">Введите телефон</string>
+    <string name="newContact_text">Новый контакт</string>
+    <string name="addContactBTN_text">Добавить</string>
+
+    <string name="fill_all_fields">Пожалуйста, заполните все поля.</string>
+    <string name="contact_added">Контакт успешно добавлен!</string>
+    <string name="permission_denied">В доступе отказано</string>
+    <string name="search">Фильтр</string>
 
 </resources>
